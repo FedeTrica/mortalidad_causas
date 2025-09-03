@@ -6253,7 +6253,8 @@ Tasa/razon por <strong>Enf. mal definidas</strong></p>
 ## $ grupo_oms &lt;chr&gt; &quot;notrans&quot;, &quot;notrans&quot;, &quot;notrans&quot;, &quot;notrans&quot;, &quot;notrans&quot;, &quot;notr…
 ## $ casos     &lt;int&gt; 75, 2, 71, 11, 63, 593, 28, 364, 92, 43, 60, 179, 177, 128, …
 ## $ pob       &lt;dbl&gt; 140, 4, 153, 27, 157, 1508, 73, 960, 245, 116, 165, 494, 490…</code></pre>
-<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a><span class="co"># saveRDS(data_mortalidad_deptos, &quot;data_salidas/data_mortalidad_deptos.rds&quot;)</span></span></code></pre></div>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a><span class="co"># saveRDS(data_mortalidad_deptos, &quot;data_salidas/data_mortalidad_deptos.rds&quot;)</span></span>
+<span id="cb41-2"><a href="#cb41-2" tabindex="-1"></a><span class="co"># write.csv2(data_mortalidad_deptos, &quot;data_salidas/data_mortalidad_deptos.csv&quot;, fileEncoding = &quot;latin1&quot;)</span></span></code></pre></div>
 <div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" tabindex="-1"></a><span class="co"># data_mortalidad_deptos |&gt; </span></span>
 <span id="cb42-2"><a href="#cb42-2" tabindex="-1"></a><span class="co">#   pivot_wider(</span></span>
 <span id="cb42-3"><a href="#cb42-3" tabindex="-1"></a><span class="co">#     names_from = c(gedad, sexo, grupo_oms),</span></span>
